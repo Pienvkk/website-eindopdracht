@@ -1,0 +1,82 @@
+body {background-color: #e3d5b8;}
+
+h1 {
+  font-family: "fleur", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  background-color:#e3d5b8;
+  font-display: flex;
+}
+
+main {
+  font-family: "factoria", serif;
+  font-weight: 400;
+  font-style: italic;
+  }
+
+  .menu{
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
+   margin: 15px;
+   padding: 20px;
+   bottom: 20px;
+   background-color: #d7a278;
+  }
+  
+.menu, a{
+color: black;
+}
+.spaceone{
+  padding-top: 20px;
+}
+
+.Wie {
+display: flexbox;
+background-color: #679499;
+padding-bottom: 0%;
+}
+
+.Genre {
+display: flexbox;
+position: absolute;right: 1%;
+background-color: #679499;
+padding-right: 20%;
+padding-bottom: 12%;
+}
+
+.spacetwo {
+display: flexbox;
+padding-top: 30%;
+}
+
+footer {
+  display: flexbox;
+  align-items: flex-end;
+  background-color: #679499;
+  padding-right: 25%;
+}
+
+.Dylan, .Breaden, .Cole{
+background-color: #679499;
+}
+
+.music {
+background-color: #679499;
+}
+
+.albums {
+  background-color: #679499;
+}
+.items {
+  background-color: #679499;
+}
+
+.socials {
+  background-color:#679499;}
+
+footer{
+  display: flex;
+  background-color: #679499;
+}
