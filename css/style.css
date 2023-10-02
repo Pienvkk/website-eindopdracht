@@ -1,82 +1,220 @@
 body {background-color: #e3d5b8;}
 
+*{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
 h1 {
   font-family: "fleur", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 70px;
-  background-color:#e3d5b8;
-  font-display: flex;
+  padding: 50px;
+  font-display: flexbox;
+  margin-left: 40%;
 }
-
+.navbar{
+  display: flex;
+  }
+  
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+  padding: 30px;
+   background-color:#d7a278;
+  }
+  
+  
+.navbar a{
+   text-decoration: none;
+   margin: 0 130px;
+  }
+  
 main {
   font-family: "factoria", serif;
   font-weight: 400;
   font-style: italic;
   }
 
-  .menu{
-   display: flex;
-   justify-content: space-around;
-   list-style-type: none;
-   margin: 15px;
-   padding: 20px;
-   bottom: 20px;
-   background-color: #d7a278;
-  }
-  
-.menu, a{
-color: black;
-}
-.spaceone{
-  padding-top: 20px;
-}
 
 .Wie {
-display: flexbox;
+display:flex;
+flex-direction: column;
 background-color: #679499;
-padding-bottom: 0%;
+margin-bottom: 1em;
 }
 
-.Genre {
-display: flexbox;
-position: absolute;right: 1%;
-background-color: #679499;
-padding-right: 20%;
-padding-bottom: 12%;
-}
-
-.spacetwo {
-display: flexbox;
-padding-top: 30%;
+.wie h2{
+text-align: center;
 }
 
 footer {
-  display: flexbox;
-  align-items: flex-end;
-  background-color: #679499;
-  padding-right: 25%;
-}
-
-.Dylan, .Breaden, .Cole{
-background-color: #679499;
-}
-
-.music {
-background-color: #679499;
-}
-
-.albums {
-  background-color: #679499;
-}
-.items {
-  background-color: #679499;
-}
-
-.socials {
-  background-color:#679499;}
-
-footer{
   display: flex;
   background-color: #679499;
+  padding-right: 5em;
 }
+
+.aboutus {
+display:flex;
+}
+
+.aboutus section{
+flex-direction:row;
+padding: 1em;
+background-color: #679499;
+margin-top: 0em;
+}
+
+.musicalbums{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+background-color: #679499;
+}
+
+
+.muziekenmeer h2{
+  flex: 1;
+  text-align: center;
+  margin: 20px; 
+  padding: 2px; 
+  background-color: #679499;
+  margin-right:1px;
+  margin-left: 1px;
+  }
+
+  
+  .muziekenmeer h3{
+   flex: 1;
+  text-align: center;
+  margin: 20px; 
+  padding: 20px; 
+  background-color: #679499;
+  margin-right:1px;
+  margin-left: 1px;
+  }
+
+  .muziekmerch{
+  display:flex;
+  }
+
+  .muziekmerch, section{
+  flex-direction: column;
+  }
+
+.muziekmerch section{
+background-color: #679499;
+margin: 1em;
+}
+
+  .muziekmerch img{
+  margin: 5em;
+  background-color:#b2cdd1;
+  padding: 1em;
+  }
+
+.asso img{
+  padding-left: 100px;
+  padding-right: 100px;
+  }
+
+ 
+.updates{
+  display: flex;
+  }
+  
+.text{
+flex: 1;
+text-align: center;
+margin: 20px; 
+padding: 30px; 
+background-color: #679499;
+}
+  
+    
+.links{
+  display: flex;
+ }
+  
+.links ul{
+   list-style-type: none;
+    display: flex;
+    padding: 30px;
+}
+  
+.links a{
+ text-decoration: none;
+ margin: 0 110px;
+}
+
+
+.naarsocials{
+  flex: 1;
+   text-align: center;
+  }
+
+
+.socialbuttons{
+  background-color: #679499;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+ }
+
+.generator{
+  display: flex;
+ }
+ 
+ .playlisttext{
+   flex: 1; 
+   margin: 10px; 
+   padding: 20px; 
+   background-color: #679499; 
+   padding-bottom: 270px;
+   margin-right: 17px;
+   margin-left: 20px
+ }
+  
+  
+.Spotify ul{
+  list-style-type: none;
+  display: flex;
+  padding: 30px;
+}
+
+.Spotify a{
+  text-decoration: none;
+   margin: 0 130px;
+}
+.youtube ul{
+  list-style-type: none;
+   display: flex;
+   padding: 30px;
+ }
+ .youtube a{
+  text-decoration: none;
+    margin: 0 130px;
+ }
+ 
+ .lineen section:last-of-type{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  padding: 1em;
+ }
+ 
+ .lineen section:last-of-type > *{
+   flex: 1 1 20em;
+   padding: 2em;
+   padding-left: 1em;
+   background-color: #679499;
+ }
+ 
+footer{
+display: flex;
+margin: 1em;
+}
+ 
+
+
