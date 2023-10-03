@@ -10,8 +10,8 @@ h1 {
   font-weight: 700;
   font-style: normal;
   font-size: 5em;
-  padding: 1em;
-  font-display: flexbox;
+  padding: 0.5em;
+  font-display: flex;
   margin-left: 40%;
 }
 .navbar{
@@ -56,17 +56,21 @@ footer {
 }
 
 .aboutus {
-display:flex;
-flex-wrap:wrap;
-}
-
-.aboutus section{
-flex-direction:row;
-padding: 1em;
-background-color: #679499;
-margin-top: 0em;
-}
-
+  display:flex;
+  flex-wrap:wrap;
+  }
+  
+  .aboutus div{
+  display: flex
+  }
+  .aboutus section{
+  flex-direction:row;
+  padding: 1em;
+  background-color: #679499;
+  margin-top: 0em;
+  width: 28em
+  }
+  
 .musicalbums{
 display: flex;
 justify-content: space-between;
@@ -112,10 +116,6 @@ margin: 1em;
   padding: 1em;
   }
 
-.updates{
-  display: flex;
-  }
-  
 .text{
 flex: 1;
 text-align: center;
@@ -141,23 +141,36 @@ background-color: #679499;
 }
 
 
-.naarsocials{
-  flex: 1;
-   text-align: center;
+.boxsocials{
+  display: block;
+  display:flex;
+  flex-direction:column;
   }
-
-
-.socialbuttons{
-  background-color: #679499;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding: 20px;
- }
-
-.generator{
-  display: flex;
+     
+ .boxsocials div{
+  text-align: center;
  }
  
+ .boxsocials ul{
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .boxsocials ul li{
+  justify-content: space-between;
+  width: 12em;
+  margin: 2em;
+ }
+
+ .boxsocials div section{
+  margin-bottom:15em;
+  background-color: #679499;
+ }
+
+.boxsocials div section:last-of-type{
+padding-bottom: 25em;
+margin-bottom: 1em;
+}
  .playlisttext{
    flex: 1; 
    margin: 10px; 
@@ -168,26 +181,6 @@ background-color: #679499;
    margin-left: 20px
  }
   
-  
-.Spotify ul{
-  list-style-type: none;
-  display: flex;
-  padding: 30px;
-}
-
-.Spotify a{
-  text-decoration: none;
-   margin: 0 130px;
-}
-.youtube ul{
-  list-style-type: none;
-   display: flex;
-   padding: 30px;
- }
- .youtube a{
-  text-decoration: none;
-    margin: 0 130px;
- }
  
  .lineen section:last-of-type{
   display: flex;
@@ -203,6 +196,19 @@ background-color: #679499;
    background-color: #679499;
  }
  
+.muziekenmeer section ul{
+display: flex;
+}
+.muziekenmeer section ul ,li{
+justify-content:space-around
+}
+
+.muziekenmeer section ul{
+  display: flex;
+  }
+.muziekenmeer section ul ,li{
+  justify-content:space-around
+  }
 footer{
 display: flex;
 margin: 1em;
