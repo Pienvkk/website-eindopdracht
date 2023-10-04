@@ -14,11 +14,11 @@ h1 {
   font-display: flex;
   margin-left: 40%;
 }
-.navbar{
+nav{
   display: flex;
   }
   
-.navbar ul{
+nav ul{
   list-style-type: none;
   display: flex;
   padding: 2em;
@@ -26,10 +26,22 @@ h1 {
   }
   
   
-.navbar a{
+nav a{
    text-decoration: none;
    margin: 8em;
+   color: black;
+   font-family: "factoria", serif;
   }
+
+nav a:hover{
+color: white;
+transition: color 0,3s;
+border: none;
+padding: 10% 10%;
+background-color: black;
+}
+
+
   
 main {
   font-family: "factoria", serif;
@@ -90,12 +102,20 @@ background-color: #679499;
   .muziekenmeer h3{
    flex: 1;
   text-align: center;
-  margin: 20px; 
-  padding: 20px; 
+  margin: 1em; 
+  padding: 1em; 
   background-color: #679499;
-  margin-right:1px;
-  margin-left: 1px;
   }
+.muziekenmeer a{ 
+ color: black;
+}
+
+.muziekenmeer a:hover{
+color: white;
+padding: 1%;
+margin: 3%;
+background-color: black;
+}
 
   .muziekmerch{
   display:flex;
@@ -110,36 +130,35 @@ background-color: #679499;
 margin: 1em;
 }
 
+.muziekmerch ul{
+display: flex;
+}
+
+.muziekmerch ul ,li{
+justify-content: space-around;
+}
+
   .muziekmerch img{
   margin: 5em;
   background-color:#b2cdd1;
   padding: 1em;
+  transition: 0,5;
+  width: 18%;
   }
+
+  .muziekmerch img:hover{
+transform: scale(1.2);
+  }
+
 
 .text{
 flex: 1;
-text-align: center;
-margin: 20px; 
-padding: 30px; 
+text-align:center;
+margin: 5em; 
+padding: 5em; 
 background-color: #679499;
 }
-  
-    
-.links{
-  display: flex;
- }
-  
-.links ul{
-   list-style-type: none;
-    display: flex;
-    padding: 30px;
-}
-  
-.links a{
- text-decoration: none;
- margin: 0 110px;
-}
-
+   
 
 .boxsocials{
   display: block;
@@ -171,17 +190,7 @@ background-color: #679499;
 padding-bottom: 25em;
 margin-bottom: 1em;
 }
- .playlisttext{
-   flex: 1; 
-   margin: 10px; 
-   padding: 20px; 
-   background-color: #679499; 
-   padding-bottom: 270px;
-   margin-right: 17px;
-   margin-left: 20px
- }
-  
- 
+
  .lineen section:last-of-type{
   display: flex;
   flex-direction:row;
@@ -209,10 +218,27 @@ justify-content:space-around
 .muziekenmeer section ul ,li{
   justify-content:space-around
   }
+
 footer{
-display: flex;
-margin: 1em;
+display: block;
+width: 90%;
+margin-top: 1em;
+width: 95%;
 }
- 
+
+footer a{
+color:black
+}
+
+footer a:hover{
+color: white;
+}
+
+footer a:active{
+color:rgb(178, 44, 44);
+}
+footer a :visited{
+color: purple;
+}
 
 
