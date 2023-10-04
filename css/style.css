@@ -241,7 +241,7 @@ justify-content:space-around
 }
 
 .muziekenmeer section ul{
-  display: flex;
+  display:flex;
   }
 .muziekenmeer section ul ,li{
   justify-content:space-around
