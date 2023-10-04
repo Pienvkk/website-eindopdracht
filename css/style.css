@@ -50,14 +50,14 @@ main {
   }
 
 
-.Wie {
+.lineen section:first-of-type {
 display:flex;
 flex-direction: column;
 background-color: #679499;
 margin-bottom: 1em;
 }
 
-.Wie h2{
+.lineen h2:first-of-type{
 text-align: center;
 }
 
@@ -215,8 +215,12 @@ background-color: #679499;
  }
 
 .boxsocials div section:last-of-type{
-padding-bottom: 25em;
+padding-bottom: 10em;
 margin-bottom: 1em;
+}
+
+.boxsocials div section li{
+justify-content: space-between;
 }
 
  .lineen section:last-of-type{
