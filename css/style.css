@@ -71,25 +71,48 @@ footer {
   display:flex;
   flex-wrap:wrap;
   }
-  
   .aboutus div{
   display: flex
   }
+
+  .aboutus h2{
+    flex: 1;
+  text-align: center;
+  background-color: #679499;
+  padding: 0,5em;
+  }
   .aboutus section{
   flex-direction:row;
-  padding: 1em;
+  padding: 1.2em;
   background-color: #679499;
   margin-top: 0em;
-  width: 28em
+  width: 28em;
+  margin: 0.6em;
   }
   
-.musicalbums{
-display: flex;
-justify-content: space-between;
-flex-direction: row;
-background-color: #679499;
+.aboutus section a{
+color: black;
+background-color:#d7a278;
+border-radius: 10%;
 }
+.aboutus section a:hover{
+  color: white;
+  margin: 1em;
+  transition: color 0.2s;
+  border-radius: 10%;
+  padding: 1% 1%;
+  background-color:black;
+  }
 
+.musicalbums div{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.musicalbums h2:first-of-type{
+  flex: 1;
+  text-align: center;
+}
 
 .muziekenmeer h2{
   flex: 1;
@@ -97,6 +120,11 @@ background-color: #679499;
   padding: 1em; 
   background-color: #679499;
   }
+.musicalbums section{
+  margin: 0.2%;
+  padding: 0.5%;
+  background-color: #679499;
+}
 
   
   .muziekenmeer h3{
@@ -235,7 +263,7 @@ color: white;
 }
 
 footer a:active{
-color:rgb(178, 44, 44);
+color:blue
 }
 footer a :visited{
 color: purple;
