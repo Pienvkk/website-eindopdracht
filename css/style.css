@@ -147,36 +147,30 @@ flex-direction: row;
   margin: 1em;
 }
 
-  .muziekmerch{
-  display:flex;
-  }
-
-  .muziekmerch, section{
-  flex-direction: column;
-  }
-
-.muziekmerch section{
-background-color: #679499;
-margin: 1em;
-}
-
-.muziekmerch ul{
+.merchpagina ul{
 display: flex;
+flex-wrap: wrap;
+background-color: #679499;
+}
+.merchpagina h2{
+text-align: center;
+flex: 1;
 }
 
-.muziekmerch ul ,li{
+.merchpagina li{
 justify-content: space-around;
+margin: 5em;
 }
 
-  .muziekmerch img{
-  margin: 5em;
+  .merchpagina li{
+  margin-right: 5em;
   background-color:#b2cdd1;
   padding: 1em;
   transition: 0,5;
   width: 18%;
   }
 
-  .muziekmerch img:hover{
+  .merchpagina li:hover{
 transform: scale(1.2);
   }
 
