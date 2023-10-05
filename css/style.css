@@ -61,12 +61,6 @@ margin-bottom: 1em;
 text-align: center;
 }
 
-footer {
-  display: flex;
-  background-color: #679499;
-  padding-right: 5em;
-}
-
 .aboutus {
   display:flex;
   flex-wrap:wrap;
@@ -104,43 +98,43 @@ border-radius: 10%;
   background-color:black;
   }
 
-.musicalbums div{
+.musicalbums div:first-of-type{
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
+margin-bottom: 5em;
 }
-.musicalbums h2:first-of-type{
+.musicalbums h2{
   flex: 1;
   text-align: center;
+  padding-bottom: 1em;
 }
 
-.muziekenmeer h2{
-  flex: 1;
-  text-align: center;
-  padding: 1em; 
-  background-color: #679499;
-  }
+.musicalbums section h2:last-of-type{
+padding-top: 1em;
+
+}
 .musicalbums section{
   margin: 0.2%;
   padding: 0.5%;
   background-color: #679499;
 }
 
-  
-  .muziekenmeer h3{
+  .musicalbums div:last-of-type h3{
    flex: 1;
   text-align: center;
   margin: 1em; 
   padding: 1em; 
   background-color: #679499;
   }
-.muziekenmeer a{ 
+.musicalbums a{ 
  color: black;
  background-color:#d7a278;
  border-radius: 10%;
+ padding: 1em;
 }
 
-.muziekenmeer a:hover{
+.musicalbums a:hover{
   color: white;
   background-color:black;
   border-radius: 10%;
@@ -160,20 +154,15 @@ flex: 1;
 .merchpagina li{
 justify-content: space-around;
 margin: 5em;
+background-color:#b2cdd1;
+ padding:1%;
+ transition: 0,5;
 }
 
-  .merchpagina li{
-  margin-right: 5em;
-  background-color:#b2cdd1;
-  padding: 1em;
-  transition: 0,5;
-  width: 18%;
-  }
 
-  .merchpagina li:hover{
+.merchpagina li:hover{
 transform: scale(1.2);
-  }
-
+}
 
 .text{
 flex: 1;
@@ -187,19 +176,21 @@ background-color: #679499;
 .boxsocials{
   display: block;
   flex-direction:column;
-  }
+ }
 
-  .boxsocials a{
-    color: black;
-    background-color:#d7a278;
-    border-radius: 10%;
-  }
+  
+.boxsocials a{
+  color: black;
+  background-color:#d7a278;
+  border-radius: 10%;
+ }
   .boxsocials a:hover{
     color: white;
     background-color:black;
     border-radius: 10%;
     margin: 1em;
-  }
+ }
+
  .boxsocials h2 {
   text-align: center;
  }
@@ -227,40 +218,37 @@ background-color: #679499;
  margin-bottom: 1em;
 }
 
-
- .lineen section:last-of-type{
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
-  padding: 1em;
+.lineen section:last-of-type{
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+padding: 1em;
  }
  
  .lineen section:last-of-type > *{
-   flex: 1 1 20em;
-   padding: 2em;
-   padding-left: 1em;
-   background-color: #679499;
+flex: 1 1 20em;
+padding: 2em;
+padding-left: 1em;
+background-color: #679499;
  }
- 
-.muziekenmeer section ul{
-display: flex;
+
+.musicalbums div:last-of-type ul{
+display:flex;
 }
-.muziekenmeer section ul ,li{
+.musicalbums div:last-of-type ul ,li{
 justify-content:space-around
 }
 
-.muziekenmeer section ul{
-  display:flex;
-  }
-.muziekenmeer section ul ,li{
-  justify-content:space-around
-  }
+ .musicalbums div:last-of-type section{
+margin-top: 1em;
+padding: 2em;
+ }
 
 footer{
 display: block;
-width: 90%;
 margin-top: 1em;
-width: 95%;
+width: 100%;
+background-color: #d7a278;
 }
 
 footer a{
