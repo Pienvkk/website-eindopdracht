@@ -136,13 +136,15 @@ flex-direction: row;
   }
 .muziekenmeer a{ 
  color: black;
+ background-color:#d7a278;
+ border-radius: 10%;
 }
 
 .muziekenmeer a:hover{
-color: white;
-padding: 1%;
-margin: 3%;
-background-color: black;
+  color: white;
+  background-color:black;
+  border-radius: 10%;
+  margin: 1em;
 }
 
   .muziekmerch{
@@ -190,38 +192,47 @@ background-color: #679499;
 
 .boxsocials{
   display: block;
-  display:flex;
   flex-direction:column;
   }
-     
- .boxsocials div{
+
+  .boxsocials a{
+    color: black;
+    background-color:#d7a278;
+    border-radius: 10%;
+  }
+  .boxsocials a:hover{
+    color: white;
+    background-color:black;
+    border-radius: 10%;
+    margin: 1em;
+  }
+ .boxsocials h2 {
   text-align: center;
  }
  
  .boxsocials ul{
-  display: flex;
-  justify-content: center;
+ display: flex;
+ justify-content: center;
  }
- 
  .boxsocials ul li{
   justify-content: space-between;
-  width: 12em;
-  margin: 2em;
+  flex-direction: row;
+  margin-top: 2em;
+  margin-right: 7em;
+  margin-left: 7em;
  }
 
- .boxsocials div section{
-  margin-bottom:15em;
+ .boxsocials section{
+  margin-bottom:10em;
+  padding-bottom: 1em;
   background-color: #679499;
  }
 
-.boxsocials div section:last-of-type{
-padding-bottom: 10em;
-margin-bottom: 1em;
+ .boxsocials section:last-of-type{
+ padding-bottom: 1em;
+ margin-bottom: 1em;
 }
 
-.boxsocials div section li{
-justify-content: space-between;
-}
 
  .lineen section:last-of-type{
   display: flex;
