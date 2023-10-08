@@ -7,28 +7,27 @@ list-style-type: none;
 }
 h1 {
   font-family: "fleur", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   font-size: 5em;
-  padding: 0.5em;
-  font-display: flex;
-  margin-left: 40%;
+  margin-left: 8.5em;
 }
 nav{
   display: flex;
   }
-  
+
 nav ul{
-  list-style-type: none;
   display: flex;
-  padding: 2em;
-   background-color:#d7a278;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 0.8em;
+  background-color:#d7a278;
   }
   
   
 nav a{
    text-decoration: none;
-   margin: 8em;
+   margin: 7.4em;
    color: black;
    font-family: "factoria", serif;
   }
@@ -36,11 +35,10 @@ nav a{
 nav a:hover{
 color: white;
 transition: color 0,3s;
-border: none;
-padding: 10% 10%;
+border-radius: 5%;
+padding: 5% 10%;
 background-color: black;
 }
-
 
   
 main {
@@ -49,7 +47,9 @@ main {
   font-style: italic;
   }
 
-
+.lineen img:hover{
+transform: scale(1.1);
+}
 .lineen section:first-of-type {
 display:flex;
 flex-direction: column;
@@ -63,27 +63,41 @@ text-align: center;
 
 .aboutus {
   display:flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   }
-  .aboutus div{
-  display: flex
-  }
+.aboutus div{
+display: flex;
+flex-wrap: wrap;
+}
 
   .aboutus h2{
-    flex: 1;
+  flex: 1;
   text-align: center;
   background-color: #679499;
   padding: 0,5em;
   }
   .aboutus section{
   flex-direction:row;
-  padding: 1.2em;
+  padding: 1em;
   background-color: #679499;
-  margin-top: 0em;
   width: 28em;
   margin: 0.6em;
   }
-  
+
+.aboutus section:hover{
+  transform: scale(1.1);
+  background-color:#b2cdd1;
+  }
+
+@keyframes scale{
+ 0% {transform:scale(2);}
+
+ 100% {transform:scale(1)}
+ }
+
+ img{animation:scale 1s ease-in ;}
+
+
 .aboutus section a{
 color: black;
 background-color:#d7a278;
@@ -104,28 +118,26 @@ flex-wrap: wrap;
 flex-direction: row;
 margin-bottom: 5em;
 }
+.musicalbums div:first-of-type section:hover{
+  transform: scale(1.1);
+  background-color:#b2cdd1;
+  }
+
 .musicalbums h2{
   flex: 1;
   text-align: center;
   padding-bottom: 1em;
 }
 
-.musicalbums section h2:last-of-type{
-padding-top: 1em;
-
-}
 .musicalbums section{
   margin: 0.2%;
   padding: 0.5%;
   background-color: #679499;
 }
 
-  .musicalbums div:last-of-type h3{
-   flex: 1;
+ .musicalbums div:last-of-type h3{
   text-align: center;
-  margin: 1em; 
   padding: 1em; 
-  background-color: #679499;
   }
 .musicalbums a{ 
  color: black;
@@ -144,19 +156,23 @@ padding-top: 1em;
 .merchpagina ul{
 display: flex;
 flex-wrap: wrap;
+}
+
+
+.merchpagina section{
 background-color: #679499;
+margin: 1em;
 }
 .merchpagina h2{
 text-align: center;
-flex: 1;
 }
 
 .merchpagina li{
 justify-content: space-around;
 margin: 5em;
 background-color:#b2cdd1;
- padding:1%;
- transition: 0,5;
+padding:1%;
+transition: 0,5;
 }
 
 .merchpagina li:hover{
@@ -173,28 +189,34 @@ transform: scale(1.2);
   color: black;
   background-color:#d7a278;
   border-radius: 10%;
+  padding: 1em;
  }
   .boxsocials a:hover{
     color: white;
     background-color:black;
     border-radius: 10%;
-    margin: 1em;
+    padding: 1em;
+    margin: 2em;
+ }
+ .boxsocials img:hover{
+  transform: scale(1.1);
  }
 
+.boxsocials section:last-of-type img{
+margin-top: 2em;
+ }
+.boxsocials section ul{
+justify-content: space-around;
+}
  .boxsocials h2 {
   text-align: center;
  }
- 
  .boxsocials ul{
- display: flex;
- justify-content: center;
- }
+  display: flex;
+  }
  .boxsocials ul li{
-  justify-content: space-between;
-  flex-direction: row;
   margin-top: 2em;
-  margin-right: 7em;
-  margin-left: 7em;
+  margin: 2em 2em;
  }
 
  .boxsocials section{
@@ -204,7 +226,6 @@ transform: scale(1.2);
  }
 
  .boxsocials section:last-of-type{
- padding-bottom: 1em;
  margin-bottom: 1em;
 }
 
@@ -215,12 +236,11 @@ flex-wrap: wrap;
 padding: 1em;
  }
  
- .lineen section:last-of-type > *{
-flex: 1 1 20em;
-padding: 2em;
-padding-left: 1em;
-background-color: #679499;
- }
+.lineen section:last-of-type > *{
+ flex: 1 1 20em;
+ padding: 2em;
+ background-color: #679499;
+}
 
 .musicalbums div:last-of-type ul{
 display:flex;
@@ -229,7 +249,7 @@ display:flex;
 justify-content:space-around
 }
 
- .musicalbums div:last-of-type section{
+.musicalbums div:last-of-type section{
 margin-top: 1em;
 padding: 2em;
  }
@@ -237,7 +257,7 @@ padding: 2em;
 footer{
 display: block;
 margin-top: 1em;
-width: 100%;
+max-width: 100%;
 background-color: #d7a278;
 }
 
