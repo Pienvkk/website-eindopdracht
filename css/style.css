@@ -34,7 +34,7 @@ nav a{
 
 nav a:hover{
 color: white;
-transition: color 0,3s;
+transition: color 1ms;
 border-radius: 5%;
 padding: 5% 10%;
 background-color: black;
@@ -74,7 +74,7 @@ flex-wrap: wrap;
   flex: 1;
   text-align: center;
   background-color: #679499;
-  padding: 0,5em;
+  padding: 1em;
   }
   .aboutus section{
   flex-direction:row;
@@ -172,7 +172,7 @@ justify-content: space-around;
 margin: 5em;
 background-color:#b2cdd1;
 padding:1%;
-transition: 0,5;
+transition: 5ms;
 }
 
 .merchpagina li:hover{
